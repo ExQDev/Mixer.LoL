@@ -59,6 +59,9 @@ export default class Spotify {
     if (!refresh_token) {
       return null
     }
+    if (!tokenURL) {
+      return null
+    }
 
     const body = {
       grant_type: 'refresh_token',
@@ -98,6 +101,9 @@ export default class Spotify {
     if (this.openedWindow) {
       this.openedWindow.close()
     }
+    if (!tokenURL || !redirect_uri) {
+      return
+    }
     console.log(state, this.state)
     if (state === this.state) {
       this.state = ''
@@ -135,6 +141,9 @@ export default class Spotify {
           return
         }
       }
+    }
+    if (!redirect_uri || !clientId) {
+      return
     }
     this.state = md5(DateTime.now().toString())
     const url = (new URLSearchParams({
