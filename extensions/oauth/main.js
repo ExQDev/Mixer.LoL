@@ -11,10 +11,6 @@ const NL_PORT = argv['nl-port'];
 const NL_TOKEN = argv['nl-token'];
 const NL_EXTID = argv['nl-extension-id'];
 
-const clientId = 'ade03a71678a413db9808404d3a9d6ce'
-const clientSecret = '4de3198c193348d8a88c941f150fc1c0'
-
-
 let client = new WS(`ws://localhost:${NL_PORT}?extensionId=${NL_EXTID}`);
 
 
