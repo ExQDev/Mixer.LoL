@@ -1,0 +1,21 @@
+{
+  "message": "hello i18n !!",
+  "signin": {
+    "title": "Log In",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Submit",
+    "register": "Register"
+  },
+  "actions": {
+    "drawer": {
+      "login": "Log in",
+      "logout": "Log out"
+    }
+  },
+  "404": {
+    "toHome": "HOME PAGE",
+    "description": "The page you are looking for might have been removed had its name changed or is temporarily unavailable."
+  },
+  "wrong email/pass": "Wrong email or password"
+}

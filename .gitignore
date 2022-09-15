@@ -1,0 +1,5 @@
+appx/.env
+node_modules
+*.log
+bin
+dist

@@ -1,0 +1,17 @@
+{
+  "name": "lolinteract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node main.js"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "league-connect": "^6.0.0-rc8",
+    "minimist": "^1.2.5",
+    "node-fetch": "^3.2.6",
+    "uuid": "^8.3.2",
+    "websocket": "^1.0.34"
+  }
+}

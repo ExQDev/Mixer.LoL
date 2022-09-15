@@ -1,0 +1,12 @@
+{
+  "name": "oauth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "minimist": "^1.2.5",
+    "websocket": "^1.0.34",
+    "uuid": "^8.3.2"
+  }
+}

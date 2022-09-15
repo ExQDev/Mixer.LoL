@@ -1,0 +1,63 @@
+{
+  "applicationId": "org.exqdev.mixer",
+  "version": "0.0.4",
+  "defaultMode": "window",
+  "documentRoot": "/appx/dist/",
+  "port": 8080,
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "enableExtensions": true,
+  "logging": {
+    "enabled": true
+  },
+  "extensions": [
+    {
+      "id": "org.exqdev.oauth",
+      "commandLinux": "node ${NL_PATH}/extensions/oauth/main.js --linux",
+      "commandDarwin": "node ${NL_PATH}/extensions/oauth/main.js --darwin",
+      "commandWindows": "node ${NL_PATH}/extensions/oauth/main.js --windows"
+    },
+    {
+      "id": "org.exqdev.lolinteract",
+      "commandLinux": "node ${NL_PATH}/extensions/lolinteract/main.js --linux",
+      "commandDarwin": "node ${NL_PATH}/extensions/lolinteract/main.js --darwin",
+      "commandWindows": "node ${NL_PATH}/extensions/lolinteract/main.js --windows"
+    },
+    {
+      "id": "org.exqdev.soundcloud",
+      "commandLinux": "node ${NL_PATH}/extensions/soundcloud/main.js --linux",
+      "commandDarwin": "node ${NL_PATH}/extensions/soundcloud/main.js --darwin",
+      "commandWindows": "node ${NL_PATH}/extensions/soundcloud/main.js --windows"
+    }
+  ],
+  "modes": {
+    "window": {
+      "title": "Mixer.LoL",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "resizable": true,
+      "alwaysOnTop": false,
+      "enableInspector": true,
+      "icon": "/appx/public/favicon.ico",
+      "borderless": false,
+      "maximize": false,
+      "hidden": false,
+      "exitProcessOnClose": false
+    }
+  },
+  "cli": {
+    "binaryName": "Mixer.LoL",
+    "resourcesPath": "/appx/dist/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/appx/public/neutralino.js",
+    "binaryVersion": "4.6.0",
+    "clientVersion": "3.5.0",
+    "frontendLibrary": {
+      "patchFile": "/appx/public/index.html",
+      "devUrl": "http://localhost:8080"
+    }
+  }
+}
